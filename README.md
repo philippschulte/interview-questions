@@ -2,9 +2,10 @@
 
 > Collection of coding questions I was asked in my technical interviews
 
-# Features
+## Features
 
 - Reverse a String
+- Paldinromes
 
 ## Tests
 
