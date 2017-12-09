@@ -6,6 +6,7 @@
 
 - Reverse a String
 - Paldinromes
+- Reverse a Integer
 
 ## Tests
 
