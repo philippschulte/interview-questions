@@ -1,12 +1,13 @@
 # interview-questions
 
-> Collection of coding questions I was asked in my technical interviews
+> Collection of coding questions I was asked in technical interviews
 
 ## Features
 
-- Reverse a String
+- Maximum occurring character in a string
 - Paldinromes
-- Reverse a Integer
+- Reverse a String
+- Reverse an Integer
 
 ## Tests
 
