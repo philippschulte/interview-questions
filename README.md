@@ -8,6 +8,7 @@
 - Paldinromes
 - Reverse a String
 - Reverse an Integer
+- Split an array into chunks
 
 ## Tests
 
