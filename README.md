@@ -4,6 +4,7 @@
 
 ## Features
 
+- Anagrams
 - Maximum occurring character in a string
 - Paldinromes
 - Reverse a String
