@@ -5,7 +5,8 @@
 ## Features
 
 - Anagrams
-- Maximum occurring character in a string
+- Capitalize the first letter of each word in the string
+- Find maximum occurring character in a string
 - Paldinromes
 - Reverse a String
 - Reverse an Integer
