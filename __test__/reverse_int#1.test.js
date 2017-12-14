@@ -3,8 +3,8 @@
 const reverseInt = require('../exercises/reverse_int#1');
 
 describe('#reverseInt#1', () => {
-  test('should exists', () => {
-    expect(reverseInt).toBeDefined();
+  test('should be a function', () => {
+    expect(typeof reverseInt).toEqual('function');
   });
 
   test('should reverse positive numbers', () => {

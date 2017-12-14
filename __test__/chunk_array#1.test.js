@@ -3,8 +3,8 @@
 const chunkArray = require('../exercises/chunk_array#1');
 
 describe('#chunkArray#1', () => {
-  test('should exists', () => {
-    expect(chunkArray).toBeDefined();
+  test('should be a function', () => {
+    expect(typeof chunkArray).toEqual('function');
   });
 
   test('should return an array of five subarrays', () => {

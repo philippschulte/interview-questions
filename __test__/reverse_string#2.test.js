@@ -3,8 +3,8 @@
 const reverseString = require('../exercises/reverse_string#2');
 
 describe('#reverseString#2', () => {
-  test('should exists', () => {
-    expect(reverseString).toBeDefined();
+  test('should be a function', () => {
+    expect(typeof reverseString).toEqual('function');
   });
 
   test('should reverse a string', () => {

@@ -3,8 +3,8 @@
 const palindrome = require('../exercises/palindrome#1');
 
 describe('#palindrome#1', () => {
-  test('should exists', () => {
-    expect(palindrome).toBeDefined();
+  test('should be a function', () => {
+    expect(typeof palindrome).toEqual('function');
   });
 
   test('should return true if it is a palindrome', () => {

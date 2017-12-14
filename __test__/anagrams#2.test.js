@@ -3,8 +3,8 @@
 const anagrams = require('../exercises/anagrams#2');
 
 describe('#anagrams#2', () => {
-  test('should exists', () => {
-    expect(anagrams).toBeDefined();
+  test('should be a function', () => {
+    expect(typeof anagrams).toEqual('function');
   });
 
   test('should return true if it is an anagram', () => {

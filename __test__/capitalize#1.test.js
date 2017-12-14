@@ -3,8 +3,8 @@
 const capitalize = require('../exercises/capitalize#1');
 
 describe('#capitalize#1', () => {
-  test('should exists', () => {
-    expect(capitalize).toBeDefined();
+  test('should be a function', () => {
+    expect(typeof capitalize).toEqual('function');
   });
 
   test('should capitalize the first letter of every word in a sentence', () => {

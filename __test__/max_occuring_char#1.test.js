@@ -3,8 +3,8 @@
 const maxOccuringChar = require('../exercises/max_occuring_char#1');
 
 describe('#maxOccuringChar#1', () => {
-  test('should exists', () => {
-    expect(maxOccuringChar).toBeDefined();
+  test('should be a function', () => {
+    expect(typeof maxOccuringChar).toEqual('function');
   });
 
   test('should return the most commonly used character', () => {
