@@ -5,12 +5,13 @@
 ## Features
 
 - Anagrams
-- Capitalize the first letter of each word in the string
+- Capitalize the first letter of each word in a string
 - Find maximum occurring character in a string
 - Paldinromes
 - Reverse a String
 - Reverse an Integer
 - Split an array into chunks
+- Generate a step shape using the # character
 
 ## Tests
 
