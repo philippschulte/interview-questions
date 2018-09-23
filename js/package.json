@@ -1,0 +1,32 @@
+{
+  "name": "interview-questions",
+  "version": "0.0.1",
+  "description": "Collection of coding interview questions",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philippschulte/interview-questions.git"
+  },
+  "keywords": [
+    "interview questions",
+    "coding",
+    "programming",
+    "algorithms",
+    "data structures"
+  ],
+  "author": "Philipp Schulte <philipp.schulte@ymail.com> (http://www.philippschulte.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/philippschulte/interview-questions/issues"
+  },
+  "homepage": "https://github.com/philippschulte/interview-questions#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
