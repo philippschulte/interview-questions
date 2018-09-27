@@ -10,9 +10,32 @@
  * @return {boolean} True or false depending on whether it's an anagram.
  * @example anagrams('RAIL! SAFETY!', 'fairy tales') // => true
  */
-function anagrams(str_a, str_b) {
-  return cleanString(str_a) === cleanString(str_b);
+module.exports.v1 = function(str_a, str_b) {
+  const charMap_a = buildCharMap(str_a);
+  const charMap_b = buildCharMap(str_b);
+
+  if (Object.keys(charMap_a).length !== Object.keys(charMap_b).length) return false;
+
+  for (let char in charMap_a) {
+    if (charMap_a[char] !== charMap_b[char]) return false;
+  }
+
+  return true;
+};
+
+function buildCharMap(str) {
+  const charMap = {};
+
+  for (let char of str.replace(/\W/g, '').toLowerCase()) {
+    charMap[char] = charMap[char] + 1 || 1;
+  }
+  
+  return charMap;
 }
+
+module.exports.v2 = function(str_a, str_b) {
+  return cleanString(str_a) === cleanString(str_b);
+};
 
 function cleanString(str) {
   return str
@@ -22,5 +45,3 @@ function cleanString(str) {
     .sort()
     .join('');
 }
-
-module.exports = anagrams;

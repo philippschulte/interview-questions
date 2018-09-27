@@ -8,7 +8,7 @@
  * @return {string} The capitalized string.
  * @example capitalize('look, it is working!') // => Look, It Is Working!
  */
-function capitalize(str) {
+module.exports.v1 = function(str) {
   const words = [];
 
   for (let word of str.split(' ')) {
@@ -16,6 +16,4 @@ function capitalize(str) {
   }
 
   return words.join(' ');
-}
-
-module.exports = capitalize;
+};

@@ -6,7 +6,7 @@
  * @return {string} The most commonly used character.
  * @example maxOccuringChar('philipp'); // => p
  */
-function maxOccuringChar(str) {
+module.exports.v1 = function(str) {
   let max = 0;
   let chars = {};
   let maxChar = '';
@@ -23,6 +23,4 @@ function maxOccuringChar(str) {
   }
 
   return maxChar;
-}
-
-module.exports = maxOccuringChar;
+};

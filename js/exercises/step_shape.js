@@ -1,22 +1,22 @@
 'use strict';
 
 /**
- * Write a function that accepts a positive number n. The
+ * Write a function that accepts a positive integer. The
  * function should return an array of strings representing
  * a step shape with n levels using the # character. Make
  * sure the step has spaces on the right hand side so that
  * each string has the same amount of characters!
- * @param n {number} The number of step levels.
+ * @param steps {int} The number of step levels.
  * @return {array} Array of strings representing a step shape.
  * @example stepShape(3); // => [ '#  ', '## ', '###' ]
  */
-function stepShape(n) {
+module.exports.v1 = function(steps) {
   const shape = [];
 
-  for (let row = 0; row < n; row++) {
+  for (let row = 0; row < steps; row++) {
     let stair = '';
 
-    for (let column = 0; column < n; column++) {
+    for (let column = 0; column < steps; column++) {
       column <= row ? stair += '#' : stair += ' ';
     }
 
@@ -24,6 +24,4 @@ function stepShape(n) {
   }
 
   return shape;
-}
-
-module.exports = stepShape;
+};

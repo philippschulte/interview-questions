@@ -6,10 +6,17 @@
  * @return {boolean} True or false depending on whether it's a palindrome.
  * @example palindrome('wow'); // => true
  */
-function palindrome(str) {
+module.exports.v1 = function(str) {
+  const reversed = str
+    .split('')
+    .reverse()
+    .join('');
+
+  return str === reversed;
+};
+
+module.exports.v2 = function(str) {
   return str.split('').every((char, i, list) => {
     return char === list[list.length - i - 1];
   });
-}
-
-module.exports = palindrome;
+};
